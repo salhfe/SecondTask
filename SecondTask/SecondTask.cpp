@@ -32,9 +32,22 @@ int main()
         cout << massive[i] << " ";
     }
 
-    sort(begin(massive), end(massive));
-
     cout << "\n\nСортировка массива: ";
+///////////////////////////
+    for (int i = 1; i <= 10; ++i)
+    {
+        for (int j = 1; j <= 10; ++j)
+        {
+            if (massive[i] < massive[j])
+            {
+                int massive_temp = massive[j];
+                massive[j] = massive[i];
+                massive[i] = massive_temp;
+            }
+
+        }
+    }
+//////////////////
 
     for (int i = 1; i <= 10; ++i)
     {
